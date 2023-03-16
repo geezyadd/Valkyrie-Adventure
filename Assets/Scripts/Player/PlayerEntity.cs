@@ -49,19 +49,18 @@ namespace Player
                 return;
             }
             _rigidbody.AddForce(Vector2.up * _jumpForce);
-            Debug.Log("jump");
+            
         }
 
         private void OnCollisionStay2D(Collision2D collision)
         {
             _isJumping = false;
-            Debug.Log(collision.gameObject.name);
+            
         }
         private void OnCollisionExit2D(Collision2D collision)
         {
             _isJumping = true;
-            Debug.Log(collision.gameObject.name + "exit");
-        }
+        }   
        
     }
 
