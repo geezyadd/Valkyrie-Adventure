@@ -11,8 +11,8 @@ namespace Assets.Scripts.Player
         private float _direction;
         private void Update()
         {
-            _direction = Input.GetAxis("Horizontal");
-
+            //_direction = Input.GetAxisRaw("Horizontal");
+            _direction = Input.GetAxisRaw("Horizontal");
             if (Input.GetButtonDown("Jump")) 
             {
 
