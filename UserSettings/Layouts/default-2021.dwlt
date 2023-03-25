@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 986
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Inspector
+=======
+  m_Title: Scene
+>>>>>>> TS-2-Added_Camera
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +123,11 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 14022
+=======
+  controlID: 960
+>>>>>>> TS-2-Added_Camera
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +152,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 14084
+=======
+  controlID: 961
+>>>>>>> TS-2-Added_Camera
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +182,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 14085
+=======
+  controlID: 962
+>>>>>>> TS-2-Added_Camera
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -426,9 +442,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 58c4ffff
       m_LastClickedID: -15272
       m_ExpandedIDs: c475ffff0c83ffffae88ffff8cf6ffff0efbffffa45e0000c25e0000
+=======
+      m_SelectedIDs: 7c5e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8cf6ffff0efbffff
+>>>>>>> TS-2-Added_Camera
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -444,7 +466,11 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 9}
+=======
+        m_ClientGUIView: {fileID: 8}
+>>>>>>> TS-2-Added_Camera
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -732,9 +758,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.72274816, y: 11.257625, z: 0.3873446}
     speed: 2
     m_Value: {x: -0.72274816, y: 11.257625, z: 0.3873446}
+=======
+    m_Target: {x: -6.7254977, y: 4.1790166, z: -0.064283684}
+    speed: 2
+    m_Value: {x: -6.7254977, y: 4.1790166, z: -0.064283684}
+>>>>>>> TS-2-Added_Camera
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -785,9 +817,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 27.907328
     speed: 2
     m_Value: 27.907328
+=======
+    m_Target: 17.944178
+    speed: 2
+    m_Value: 17.944178
+>>>>>>> TS-2-Added_Camera
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -888,22 +926,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scripts/Core/Parallax
+=======
+    - Assets
+>>>>>>> TS-2-Added_Camera
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scripts/Core/Parallax
+=======
+  - Assets/Scripts/Player
+>>>>>>> TS-2-Added_Camera
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pinkl\unityProj\gameDevCourse
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
+<<<<<<< HEAD
     m_SelectedIDs: be810000
     m_LastClickedID: 33214
     m_ExpandedIDs: 00000000925f0000a85f0000ba81000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 925f0000
+    m_LastClickedID: 24466
+    m_ExpandedIDs: 00000000925f000000ca9a3bffffff7f
+>>>>>>> TS-2-Added_Camera
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
