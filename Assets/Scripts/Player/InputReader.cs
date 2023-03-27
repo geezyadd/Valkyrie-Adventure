@@ -7,17 +7,17 @@ namespace Assets.Scripts.Player
     {
 
         [SerializeField] private PlayerEntity _playerEntity;
-        
+
         private float _direction;
         private void Update()
         {
-            //_direction = Input.GetAxisRaw("Horizontal");
             _direction = Input.GetAxisRaw("Horizontal");
-            if (Input.GetButtonDown("Jump")) 
+            if (Input.GetButtonDown("Jump"))
             {
 
                 _playerEntity.Jump();
-            }   
+            }
+            
         }
         private void FixedUpdate()
         {

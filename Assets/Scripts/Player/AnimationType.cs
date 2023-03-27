@@ -7,6 +7,7 @@ namespace Player
         Run = 1,
         Jump = 2,
         Attack = 3, 
+        Dash = 4,
 
 
     }

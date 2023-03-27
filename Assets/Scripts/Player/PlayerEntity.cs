@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 
@@ -20,6 +21,8 @@ namespace Player
         [SerializeField] private Animator _animator;
         private Vector2 _movement;
         private AnimationType _currentAnimationType;
+
+        
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
@@ -42,6 +45,8 @@ namespace Player
             velocity.x = direction * _horizontalSpeed;
             _rigidbody.velocity = velocity;
         }
+        
+        
         private void SetDirection(float direction) 
         {
             if((_faceRight && direction < 0) ||
