@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -13,8 +14,14 @@ namespace Player
         [SerializeField] private bool _faceRight;
 
         [Header("Jump")]
+        [SerializeField] private JumpPointController _jumpPointController;
         [SerializeField] private float _jumpForce;
         [SerializeField] private bool _isJumping;
+        private Vector2 _wallJumpNormal;
+        [SerializeField] private float _wallJumpForce;
+        [SerializeField] private bool _wallrun;
+
+        [SerializeField] private bool _isAttacking;
 
         private Rigidbody2D _rigidbody;
 
@@ -22,13 +29,17 @@ namespace Player
         private Vector2 _movement;
         private AnimationType _currentAnimationType;
 
+        private Vector2 _normal;
         
+
+
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
         }
         private void Update()
         {
+            _isJumping = _jumpPointController.IsJumping();
             UpdateAnimations();
         }
         private void UpdateAnimations() 
@@ -36,7 +47,18 @@ namespace Player
             PlayAnimation(AnimationType.Idle, true);
             PlayAnimation(AnimationType.Run, _movement.magnitude > 0);
             PlayAnimation(AnimationType.Jump, _isJumping);
+            PlayAnimation(AnimationType.Climb, _wallrun && _isJumping);
+            PlayAnimation(AnimationType.Attack, _isAttacking);
         }
+        public void Attack() 
+        {
+            _isAttacking = true;
+        }
+        private void AttackStop()
+        {
+            _isAttacking = false;
+        }
+
         public void MoveHorizontally(float direction) 
         {
             _movement.x = direction;
@@ -68,18 +90,36 @@ namespace Player
                 return;
             }
             _rigidbody.AddForce(Vector2.up * _jumpForce);
-            
         }
 
         private void OnCollisionStay2D(Collision2D collision)
         {
-            _isJumping = false;
-            
+            for (int i = 0; i < collision.contacts.Length; i++)
+            {
+                Vector2 sum = new Vector2(transform.position.x, transform.position.y) + collision.contacts[i].normal;
+                Vector2 contactDirection = new Vector2(sum.x - transform.position.x, sum.y - transform.position.y);
+                float scalarProduct = contactDirection.x * Vector2.up.x + contactDirection.y * Vector2.up.y;
+                if(scalarProduct == 0) 
+                {
+                    _wallJumpNormal = contactDirection;
+                    _wallrun = true;
+                }
+            }
         }
         private void OnCollisionExit2D(Collision2D collision)
         {
-            _isJumping = true;
-        }   
+            _wallrun = false;
+        }
+        public void WallClimb() 
+        {
+            if (_wallrun && _isJumping) 
+            {
+                Vector2 WallRunDirection = _wallJumpNormal + Vector2.up;
+                _rigidbody.AddForce(WallRunDirection * _wallJumpForce);
+                Flip();
+                _wallrun = false;
+            }
+        }
         private void PlayAnimation(AnimationType animationType, bool active) 
         {
             if (!active) 
