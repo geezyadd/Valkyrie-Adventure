@@ -22,10 +22,12 @@ public class GameLevelInitializer : MonoBehaviour
     private void Update()
     {
         _externalDevicesInputReader.OnUpdate();
+        
     }
     private void FixedUpdate()
     {
-        _playerBrain.OnFixedUpdate();
+       _playerBrain.OnFixedUpdate();
+
     }
 
 }
