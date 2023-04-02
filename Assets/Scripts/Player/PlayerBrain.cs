@@ -1,9 +1,12 @@
 using Player;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEngine;
+using VSCodeEditor;
 
-public class PlayerBrain 
+public class PlayerBrain : IDisposable
 {
     private readonly PlayerEntity _playerEntity;
     private readonly List<IEtityInputSource> _inputSources;
@@ -13,8 +16,9 @@ public class PlayerBrain
     {
         _playerEntity = playerEntity;
         _inputSources = inputSources;
+        ProjectUpdater.Instance.FixedUpdateCalled += OnFixedUpdate;
     }
-    public void OnFixedUpdate() 
+    private void OnFixedUpdate() 
     {
         _playerEntity.MoveHorizontally(GetHorizontalDirection());
         if (IsJump) 
@@ -46,4 +50,5 @@ public class PlayerBrain
         }
         return 0;
     }
+    public void Dispose() => ProjectUpdater.Instance.FixedUpdateCalled -= OnFixedUpdate;
 }

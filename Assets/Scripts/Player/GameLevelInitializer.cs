@@ -1,33 +1,62 @@
-using Assets.Scripts.Player;
+//using Assets.Scripts.Player;
 using Player;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameLevelInitializer : MonoBehaviour
+namespace Assets.Scripts.Player 
 {
-    [SerializeField] private PlayerEntity _playerEntity;
-    [SerializeField] private GameUiInputView _gameUiInputView;
-    private ExternalDevicesInputReader _externalDevicesInputReader;
-    private PlayerBrain _playerBrain;
-    private void Awake()
+    public class GameLevelInitializer : MonoBehaviour
     {
-        _externalDevicesInputReader = new ExternalDevicesInputReader();
-        _playerBrain = new PlayerBrain(_playerEntity, new List<IEtityInputSource> 
+        [SerializeField] private PlayerEntity _playerEntity;
+        [SerializeField] private GameUiInputView _gameUiInputView;
+        private ExternalDevicesInputReader _externalDevicesInputReader;
+        private ProjectUpdater _projectUpdater;
+        private List<IDisposable> _disposables;
+        //private PlayerBrain _playerBrain;
+        private PlayerSystem _playerSystem;
+        private void Awake()
         {
-            _gameUiInputView,
-            _externalDevicesInputReader
-        });
-    }
-    private void Update()
-    {
-        _externalDevicesInputReader.OnUpdate();
-        
-    }
-    private void FixedUpdate()
-    {
-       _playerBrain.OnFixedUpdate();
+            _disposables= new List<IDisposable>();
+            if(ProjectUpdater.Instance == null) 
+            {
+                _projectUpdater= new GameObject().AddComponent<ProjectUpdater>();
+            }
+            else 
+            {
+                _projectUpdater =ProjectUpdater.Instance as ProjectUpdater;
+            }
+            _externalDevicesInputReader = new ExternalDevicesInputReader();
+            _disposables.Add(_externalDevicesInputReader);
+            //_playerBrain = new PlayerBrain(_playerEntity, new List<IEtityInputSource> 
+            //{
+            //    _gameUiInputView,
+            //    _externalDevicesInputReader
+            //});
+            _playerSystem = new PlayerSystem(_playerEntity, new List<IEtityInputSource> 
+            {
+                _gameUiInputView,
+                _externalDevicesInputReader
+            });
+        }
+        //private void Update()                         ///////////////////////////////////////////////
+        //{                                             ///////////////////////////////////////////////
+        //    _externalDevicesInputReader.OnUpdate();   ///////////////////////////////////////////////
+        //                                              ///////////////////////////////////////////////
+        //}                                             ///////////////////////////////////////////////
+
+
+        //private void FixedUpdate()
+        //{
+        //   _playerBrain.OnFixedUpdate();
+        //
+        //}
+        private void OnDestroy()
+        {
+                foreach(var disposable in _disposables) { disposable.Dispose(); }
+        }
 
     }
-
 }
+
