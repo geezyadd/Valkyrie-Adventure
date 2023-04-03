@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Jumper 
@@ -14,6 +12,7 @@ public class Jumper
         _jumperData = jumperData;
 
     }
+
     public void Jump()
     {
         if (_jumpPointController.IsJumping())

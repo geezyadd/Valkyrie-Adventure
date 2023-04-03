@@ -22,11 +22,13 @@ public class ProjectUpdater : MonoBehaviour, IProjectUpdater
             Destroy(gameObject);
         }
     }
+
     private void Update()
     {
         if (IsPaused) { return; }
         UpdateCalled?.Invoke();
     }
+
     private void FixedUpdate()
     {
         if (IsPaused) { return; }

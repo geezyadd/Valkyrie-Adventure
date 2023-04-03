@@ -7,16 +7,17 @@ public class DirectionMover
     private readonly Rigidbody2D _rigidbody;
     private readonly Transform _transform;
     private readonly DirectionalMovementData _directionalMovementData;
-
     private Vector2 _movement;
     public bool FacingLeft { get; private set; }
     public bool IsMoving => _movement.magnitude > 0;
+
     public DirectionMover(Rigidbody2D rigidbody, DirectionalMovementData directionalMovementData) 
     {
         _rigidbody= rigidbody;
         _transform= rigidbody.transform;
         _directionalMovementData = directionalMovementData;
     }
+
     public void MoveHorizontally(float direction)
     {
         _movement.x = direction;
@@ -35,6 +36,7 @@ public class DirectionMover
             Flip();
         }
     }
+
     public void Flip()
     {
         _transform.Rotate(0, 180, 0);

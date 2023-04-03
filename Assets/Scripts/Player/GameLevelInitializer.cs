@@ -14,7 +14,6 @@ namespace Assets.Scripts.Player
         private ExternalDevicesInputReader _externalDevicesInputReader;
         private ProjectUpdater _projectUpdater;
         private List<IDisposable> _disposables;
-        //private PlayerBrain _playerBrain;
         private PlayerSystem _playerSystem;
         private void Awake()
         {
@@ -29,29 +28,12 @@ namespace Assets.Scripts.Player
             }
             _externalDevicesInputReader = new ExternalDevicesInputReader();
             _disposables.Add(_externalDevicesInputReader);
-            //_playerBrain = new PlayerBrain(_playerEntity, new List<IEtityInputSource> 
-            //{
-            //    _gameUiInputView,
-            //    _externalDevicesInputReader
-            //});
             _playerSystem = new PlayerSystem(_playerEntity, new List<IEtityInputSource> 
             {
                 _gameUiInputView,
                 _externalDevicesInputReader
             });
         }
-        //private void Update()                         ///////////////////////////////////////////////
-        //{                                             ///////////////////////////////////////////////
-        //    _externalDevicesInputReader.OnUpdate();   ///////////////////////////////////////////////
-        //                                              ///////////////////////////////////////////////
-        //}                                             ///////////////////////////////////////////////
-
-
-        //private void FixedUpdate()
-        //{
-        //   _playerBrain.OnFixedUpdate();
-        //
-        //}
         private void OnDestroy()
         {
                 foreach(var disposable in _disposables) { disposable.Dispose(); }

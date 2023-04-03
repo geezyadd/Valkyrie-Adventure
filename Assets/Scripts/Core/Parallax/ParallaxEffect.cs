@@ -7,13 +7,12 @@ public class ParallaxEffect : MonoBehaviour
 {
     [SerializeField] private List<ParallaxLayer> _layers;
     [SerializeField] private Transform _target;
-
     private float _previousTargetPosition;
-
     private void Start()
     {
         _previousTargetPosition = _target.position.x;
     }
+
     private void LateUpdate()
     {
         float deltaMovement = _previousTargetPosition - _target.position.x;
