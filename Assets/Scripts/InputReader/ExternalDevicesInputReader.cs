@@ -26,7 +26,7 @@ namespace Assets.Scripts.Player
             {
                 Jump = true;
             }
-            if ( Input.GetButtonDown("Fire2"))
+            if ( Input.GetButtonDown("Fire2")) 
             {
                 Attack = true;
             }

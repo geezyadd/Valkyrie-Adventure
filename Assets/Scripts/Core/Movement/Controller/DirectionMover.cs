@@ -23,7 +23,7 @@ public class DirectionMover
         _movement.x = direction;
         SetDirection(direction);
         Vector2 velocity = _rigidbody.velocity;
-        velocity.x = direction * _directionalMovementData._horizontalSpeed;
+        velocity.x = direction * _directionalMovementData.HorizontalSpeed;
         _rigidbody.velocity = velocity;
     }
 
