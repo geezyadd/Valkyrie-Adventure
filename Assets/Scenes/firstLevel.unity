@@ -9123,9 +9123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _layers:
   - <Transform>k__BackingField: {fileID: 723768122}
-    <Speed>k__BackingField: 0.2
-  - <Transform>k__BackingField: {fileID: 1037051453}
     <Speed>k__BackingField: 0.1
+  - <Transform>k__BackingField: {fileID: 1037051453}
+    <Speed>k__BackingField: 0.2
   _target: {fileID: 519420032}
 --- !u!1 &832274227
 GameObject:
@@ -9300,7 +9300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isJumping: 0
-  _wallrun: 0
 --- !u!1 &903211562
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,8 +10368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionalMovementData:
-    <_horizontalSpeed>k__BackingField: 10
-    <FaceLeft>k__BackingField: 0
+    <HorizontalSpeed>k__BackingField: 10
+    <FaceLeft>k__BackingField: 1
   _jumperData:
     <JumpForce>k__BackingField: 700
   _jumpPointController: {fileID: 847721655}
