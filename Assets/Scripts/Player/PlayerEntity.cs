@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -7,61 +9,116 @@ namespace Player
 
     public class PlayerEntity : MonoBehaviour
     {
-        [Header("HorizontalMovement")]
-        [SerializeField] private float _horizontalSpeed;
-        [SerializeField] private bool _faceRight;
+        [SerializeField] private DirectionalMovementData _directionalMovementData;
+        [SerializeField] private JumperData _jumperData;
+
+        private DirectionMover _directionMover;
+        private Jumper _jumper;
 
         [Header("Jump")]
-        [SerializeField] private float _jumpForce;
+        [SerializeField] private JumpPointController _jumpPointController;
         [SerializeField] private bool _isJumping;
+        private Vector2 _wallJumpNormal;
+        [SerializeField] private float _wallJumpForce;
+        [SerializeField] private bool _wallrun;
+
+        [SerializeField] private bool _isAttacking;
 
         private Rigidbody2D _rigidbody;
+
+        [SerializeField] private Animator _animator;
+        private AnimationType _currentAnimationType;
+
+        
+        
+
+
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
+            _directionMover = new DirectionMover(_rigidbody, _directionalMovementData);
+            _jumper = new Jumper(_rigidbody, _jumpPointController, _jumperData);
         }
-  
-        public void MoveHorizontally(float direction) 
+        private void Update()
         {
-            SetDirection(direction);
-            Vector2 velocity = _rigidbody.velocity;
-            velocity.x = direction * _horizontalSpeed;
-            _rigidbody.velocity = velocity;
-        }
-        private void SetDirection(float direction) 
-        {
-            if((_faceRight && direction < 0) ||
-                (!_faceRight && direction > 0)) 
-            {
-                Flip();
-            }
-        }
-        private void Flip() 
-        {
-            transform.Rotate(0,180,0);
-            _faceRight = !_faceRight;
-        }
-        
-        public void Jump() 
-        {
-            if (_isJumping) 
-            {
-                return;
-            }
-            _rigidbody.AddForce(Vector2.up * _jumpForce);
-            
-        }
+            GetIsJump();
+            UpdateAnimations();
 
+        }
+        private void GetIsJump() { _isJumping = _jumpPointController.IsJumping(); }
+        
+        private void UpdateAnimations() 
+        {
+            PlayAnimation(AnimationType.Idle, true);
+            PlayAnimation(AnimationType.Run, _directionMover.IsMoving);
+            PlayAnimation(AnimationType.Jump, _isJumping);
+            PlayAnimation(AnimationType.Climb, _wallrun && _isJumping);
+            PlayAnimation(AnimationType.Attack, _isAttacking);
+        }
+        public void Attack() 
+        {
+            _isAttacking = true;
+            Debug.Log("attack");
+        }
+        private void AttackStop()
+        {
+            _isAttacking = false;
+        }
+        public void MoveHorizontally(float direction) => _directionMover.MoveHorizontally(direction);
+        public void Jump() => _jumper.Jump();
         private void OnCollisionStay2D(Collision2D collision)
         {
-            _isJumping = false;
-            
+            for (int i = 0; i < collision.contacts.Length; i++)
+            {
+                Vector2 sum = new Vector2(transform.position.x, transform.position.y) + collision.contacts[i].normal;
+                Vector2 contactDirection = new Vector2(sum.x - transform.position.x, sum.y - transform.position.y);
+                float scalarProduct = contactDirection.x * Vector2.up.x + contactDirection.y * Vector2.up.y;
+                if(scalarProduct == 0) 
+                {
+                    _wallJumpNormal = contactDirection;
+                    _wallrun = true;
+                }
+            }
         }
         private void OnCollisionExit2D(Collision2D collision)
         {
-            _isJumping = true;
-        }   
-       
+            _wallrun = false;
+        }
+        public void WallClimb() 
+        {
+            if (_wallrun && _isJumping) 
+            {
+                Vector2 WallRunDirection = _wallJumpNormal + Vector2.up;
+                _rigidbody.AddForce(WallRunDirection * _wallJumpForce);
+                _directionMover.Flip();
+                _wallrun = false;
+            }
+        }
+        private void PlayAnimation(AnimationType animationType, bool active) 
+        {
+            if (!active) 
+            {
+                if(_currentAnimationType == AnimationType.Idle || _currentAnimationType != animationType) 
+                {
+                    return;
+                }
+                _currentAnimationType = AnimationType.Idle;
+                PlayAnimation(_currentAnimationType);
+                return;
+            }
+            if(_currentAnimationType > animationType) 
+            {
+                return;
+            }
+            _currentAnimationType = animationType;
+            PlayAnimation(_currentAnimationType);
+        }
+        private void PlayAnimation(AnimationType animationType) 
+        {
+            _animator.SetInteger(nameof(AnimationType), (int)animationType);
+        }
+
+
     }
 
 }
