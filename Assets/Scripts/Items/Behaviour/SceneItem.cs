@@ -28,7 +28,7 @@ public class SceneItem : MonoBehaviour
 
     private void PickUpItem() 
     {
-        //Debug.Log(_itemDescriptor.ItemType);
+        Debug.Log(_itemDescriptor.ItemType);
         DestroyItem();
     }
     private void DestroyItem() 
