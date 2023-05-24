@@ -243,6 +243,63 @@ MonoBehaviour:
   _attackButton: {fileID: 1513886034}
   _magicButton: {fileID: 1100019668}
   _unknownButton: {fileID: 1334627375}
+--- !u!1001 &7908475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079493, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369777675580079496, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
+      propertyPath: m_Name
+      value: TrollSpell 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f059f24c9f913c54392596ff0ff7aa30, type: 3}
 --- !u!1 &24489160
 GameObject:
   m_ObjectHideFlags: 0
@@ -9444,7 +9501,7 @@ GameObject:
   - component: {fileID: 847721653}
   - component: {fileID: 847721654}
   - component: {fileID: 847721655}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jumpControllPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10418,7 +10475,7 @@ GameObject:
   - component: {fileID: 1121814950}
   - component: {fileID: 1121814951}
   - component: {fileID: 1121814953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
