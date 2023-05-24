@@ -827,6 +827,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5742071451989367951, guid: 81c4e5dff1e83c64b97a6108dcb8be34, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742071451989367951, guid: 81c4e5dff1e83c64b97a6108dcb8be34, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5742071452122014148, guid: 81c4e5dff1e83c64b97a6108dcb8be34, type: 3}
       propertyPath: m_Name
       value: Coin
@@ -1152,6 +1160,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7194764943961875150, guid: 11f790a9848e14443a2418ebb9cdab44, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194764944097664902, guid: 11f790a9848e14443a2418ebb9cdab44, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194764944097664902, guid: 11f790a9848e14443a2418ebb9cdab44, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1747,6 +1763,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4655005839008480609, guid: f8af2a7a40dd7f342bbf0056e32bd2e3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655005839008480609, guid: f8af2a7a40dd7f342bbf0056e32bd2e3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4655005839141109801, guid: f8af2a7a40dd7f342bbf0056e32bd2e3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11268,7 +11292,7 @@ MonoBehaviour:
     <JumpForce>k__BackingField: 700
   _jumpPointController: {fileID: 847721655}
   _isJumping: 0
-  _wallJumpForce: 1000
+  _wallJumpForce: 700
   _wallrun: 0
   _isAttacking: 0
   _animator: {fileID: 1121814947}
@@ -16611,6 +16635,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2891620714924767070, guid: a9cc1c59556aa184f9e77e3405c47f90, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891620714924767070, guid: a9cc1c59556aa184f9e77e3405c47f90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2891620715060546069, guid: a9cc1c59556aa184f9e77e3405c47f90, type: 3}
       propertyPath: m_Name
       value: Shield
