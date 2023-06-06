@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthController : MonoBehaviour, IDamageble, IHeal
 {
@@ -37,7 +38,11 @@ public class PlayerHealthController : MonoBehaviour, IDamageble, IHeal
     }
     private void PulseCheck() 
     {
-        if(_currentHP < 1 ) { _playerEntity.Die(); }
+        if(_currentHP < 1 ) 
+        { 
+            _playerEntity.Die();
+        }
     }
+    public void ReloadScene() { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
 
 }

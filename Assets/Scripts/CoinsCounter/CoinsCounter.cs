@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoinsCounter : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class CoinsCounter : MonoBehaviour
     private void Start()
     {
         _currentAmountOfCoins = 0f;
+    }
+    private void Update()
+    {
+        if(_currentAmountOfCoins == _requiredNumberOfCoins) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);  }
     }
     public void CollectCoin() 
     {
