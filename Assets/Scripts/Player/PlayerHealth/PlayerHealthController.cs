@@ -26,7 +26,7 @@ public class PlayerHealthController : MonoBehaviour, IDamageble
     }
     private void PulseCheck() 
     {
-        //if(_currentHP < 1 ) { _playerEntity.Die(); }
+        if(_currentHP < 1 ) { _playerEntity.Die(); }
     }
 
 }
