@@ -23,11 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 51611
-=======
-  controlID: 58
->>>>>>> AV-7-Start-menu
+  controlID: 51987
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -48,17 +44,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 271
     y: 73
     width: 782
     height: 538
-=======
-    x: 364
-    y: 73
-    width: 1021
-    height: 517
->>>>>>> AV-7-Start-menu
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -79,11 +68,7 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 1
   m_Stats: 0
-<<<<<<< HEAD
   m_SelectedSizes: 01000000000000000000000011000000000000000000000000000000000000000000000000000000
-=======
-  m_SelectedSizes: 03000000000000000000000011000000000000000000000000000000000000000000000000000000
->>>>>>> AV-7-Start-menu
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
@@ -101,7 +86,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -110,24 +95,16 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
       width: 782
       height: 517
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 391, y: 258.5}
-=======
-      width: 1021
-      height: 496
-    m_Scale: {x: 0.4592593, y: 0.45925927}
-    m_Translation: {x: 510.5, y: 248}
->>>>>>> AV-7-Start-menu
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
       x: -391
       y: -258.5
       width: 782
@@ -135,15 +112,6 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 782, y: 538}
-=======
-      x: -1111.5725
-      y: -540
-      width: 2223.145
-      height: 1080
-    m_MinimalGUI: 1
-  m_defaultScale: 0.45925927
-  m_LastWindowPixelSize: {x: 1021, y: 517}
->>>>>>> AV-7-Start-menu
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -173,11 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 51612
-=======
-  controlID: 59
->>>>>>> AV-7-Start-menu
+  controlID: 51988
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,20 +161,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1230
-=======
-    width: 1557
->>>>>>> AV-7-Start-menu
     height: 939
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 51613
-=======
-  controlID: 60
->>>>>>> AV-7-Start-menu
+  controlID: 51989
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,21 +187,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1230
     height: 559
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 51614
-=======
-    width: 1557
-    height: 538
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 8096}
-  vertical: 0
-  controlID: 61
->>>>>>> AV-7-Start-menu
+  controlID: 51990
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,13 +210,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 271
     height: 559
-=======
-    width: 364
-    height: 538
->>>>>>> AV-7-Start-menu
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 7}
@@ -299,13 +241,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-<<<<<<< HEAD
     width: 270
     height: 538
-=======
-    width: 363
-    height: 517
->>>>>>> AV-7-Start-menu
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -314,29 +251,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: 2068fdff
-      m_LastClickedID: -169952
-      m_ExpandedIDs: 5667fdff2068fdff1addfdff0cdcffff68e6ffffa4f6ffff1cf8ffff2cf8ffff06fbffff30670000e8670000446800005268000060680000c095010060960100
-=======
-      m_SelectedIDs: 4696ffff
-      m_LastClickedID: -27066
-      m_ExpandedIDs: 5096ffff
->>>>>>> AV-7-Start-menu
+      m_SelectedIDs: e8b0fcff
+      m_LastClickedID: -216856
+      m_ExpandedIDs: ecb0fcfff4b0fcfffeb0fcff56b1fcffa4b1fcff34b3fcffe0b8fcffeab8fcff8cb9fcff54dffcff88e4fcff54e5fcff40e6fcff02e7fcff9eeefcff5667fdff2068fdff1addfdff0cdcffff68e6ffffa4f6ffff1cf8ffff2cf8ffff06fbffff30670000e8670000446800005268000060680000c0950100609601007096010090ef0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Image
+        m_OriginalName: Image
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -170154
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -363,13 +294,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 271
     y: 0
-<<<<<<< HEAD
     width: 784
     height: 559
-=======
-    width: 1023
-    height: 538
->>>>>>> AV-7-Start-menu
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -399,17 +325,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 271
     y: 73
     width: 782
     height: 538
-=======
-    x: 364
-    y: 73
-    width: 1021
-    height: 517
->>>>>>> AV-7-Start-menu
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -506,7 +425,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -667,9 +586,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 138.75928, y: 395.50653, z: 1.0781034}
+    m_Target: {x: 4.844735, y: 3.5199347, z: -0.12027298}
     speed: 2
-    m_Value: {x: 138.75928, y: 395.50653, z: 1.0781034}
+    m_Value: {x: 4.844735, y: 3.5199347, z: -0.12027298}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -720,9 +639,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 98.29516
+    m_Target: 22.027327
     speed: 2
-    m_Value: 98.29516
+    m_Value: 22.027327
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -865,9 +784,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: ccee253ff083e9e45ac8d4d553de6318, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 638b5fdd5c7b70445bcae751fe517115, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 2096480721825344469, guid: ccee253ff083e9e45ac8d4d553de6318, type: 2}
+  - m_Target: {fileID: 1978822204994834165, guid: 638b5fdd5c7b70445bcae751fe517115, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -897,13 +816,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1055
     y: 0
-<<<<<<< HEAD
     width: 175
     height: 559
-=======
-    width: 170
-    height: 538
->>>>>>> AV-7-Start-menu
   m_MinSize: {x: 242, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
@@ -931,17 +845,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 1055
     y: 73
     width: 173
     height: 538
-=======
-    x: 1387
-    y: 73
-    width: 168
-    height: 517
->>>>>>> AV-7-Start-menu
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -970,21 +877,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 559
     width: 1230
     height: 380
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
-=======
-    y: 538
-    width: 1557
-    height: 401
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
->>>>>>> AV-7-Start-menu
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
@@ -1011,15 +909,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 632
     width: 1229
     height: 359
-=======
-    y: 611
-    width: 1556
-    height: 380
->>>>>>> AV-7-Start-menu
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1038,37 +930,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets/Scripts/IHeal
-=======
     - Assets/Resources/Prefab/MenuUI
->>>>>>> AV-7-Start-menu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets/Scripts/IHeal
-=======
   - Assets/Resources/Prefab/MenuUI
->>>>>>> AV-7-Start-menu
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: C:\Users\d1nque\Documents\2\GitTest
+  m_LastProjectPath: C:\Users\pinkl\unityProj\gameDevCourse
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 157}
-    m_SelectedIDs: be9b0100
-    m_LastClickedID: 105406
-    m_ExpandedIDs: 00000000086600000a6600000c6600000e6600001066000000ca9a3bffffff7f
-=======
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2ed50000
-    m_LastClickedID: 54574
-    m_ExpandedIDs: 00000000dcd40000ecd4000028d5000000ca9a3bffffff7f
->>>>>>> AV-7-Start-menu
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: ec110200
+    m_LastClickedID: 135660
+    m_ExpandedIDs: 00000000086600000a6600000c6600000e66000010660000206600004896000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1096,11 +973,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
     m_ExpandedIDs: 00000000086600000a6600000c6600000e6600001066000000ca9a3bffffff7f
-=======
-    m_ExpandedIDs: 
->>>>>>> AV-7-Start-menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1125,13 +998,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-    m_SelectedInstanceIDs: e4dcfdff
-    m_LastClickedInstanceID: -140060
-=======
-    m_SelectedInstanceIDs: 4696ffff
-    m_LastClickedInstanceID: -27066
->>>>>>> AV-7-Start-menu
+    m_SelectedInstanceIDs: e8b0fcff
+    m_LastClickedInstanceID: -216856
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000c25e000058640000ac660000906e0000887600008e5d0000be7e000040670000d85e0000647400002e620000225f000022680000066200008e5f0000c6a0000006a400007063000086890000b65f0000a05f0000c46d000042600000d2610000ee61000088630000
     m_RenameOverlay:
@@ -1182,15 +1050,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 632
     width: 1229
     height: 359
-=======
-    y: 611
-    width: 1556
-    height: 380
->>>>>>> AV-7-Start-menu
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1213,11 +1075,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1230
     y: 0
-<<<<<<< HEAD
     width: 690
-=======
-    width: 363
->>>>>>> AV-7-Start-menu
     height: 939
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -1247,15 +1105,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 1230
     y: 73
     width: 689
-=======
-    x: 1557
-    y: 73
-    width: 362
->>>>>>> AV-7-Start-menu
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1269,7 +1121,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 146
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1306,8 +1158,4 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-<<<<<<< HEAD
-  m_LastSelectedObjectID: -169952
-=======
-  m_LastSelectedObjectID: 49986
->>>>>>> AV-7-Start-menu
+  m_LastSelectedObjectID: -170154
