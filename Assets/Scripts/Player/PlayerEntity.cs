@@ -29,8 +29,10 @@ namespace Player
         [SerializeField] private Animator _animator;
         private AnimationType _currentAnimationType;
 
-        
-        
+        [SerializeField] private Transform _playerCloseAttackPoint;
+        [SerializeField] private float _playerCloseAttackRadius;
+        [SerializeField] private float _playerCloseAttackDamage;
+        private bool _isPlayerDead = false;
 
 
         private void Start()
@@ -54,6 +56,7 @@ namespace Player
             PlayAnimation(AnimationType.Jump, _isJumping);
             PlayAnimation(AnimationType.Climb, _wallrun && _isJumping);
             PlayAnimation(AnimationType.Attack, _isAttacking);
+            PlayAnimation(AnimationType.Die, _isPlayerDead);
         }
         public void Attack() 
         {
@@ -116,6 +119,15 @@ namespace Player
         private void PlayAnimation(AnimationType animationType) 
         {
             _animator.SetInteger(nameof(AnimationType), (int)animationType);
+        }
+        private void PlayerCloseAttack() 
+        {
+            var targetCollider = Physics2D.OverlapCircle(_playerCloseAttackPoint.transform.position, _playerCloseAttackRadius);
+            if (targetCollider != null && targetCollider.TryGetComponent(out IDamageble damageble)) { damageble.TakeDamage(_playerCloseAttackDamage); }
+        }
+        public void Die() 
+        {
+            _isPlayerDead = true;
         }
 
 

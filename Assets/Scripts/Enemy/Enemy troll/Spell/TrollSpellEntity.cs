@@ -1,3 +1,4 @@
+using Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class TrollSpellEntity : MonoBehaviour
     [SerializeField] public float _rangeAttackDamage;
     [SerializeField] public float _rangeAttackRadius;
     [SerializeField] private GameObject _player;
+    
     private Vector2 _spellSpawner;
     private void Awake()
     {
@@ -21,10 +23,10 @@ public class TrollSpellEntity : MonoBehaviour
     private void SpellDamager()
     {
         var targetCollider = Physics2D.OverlapCircle(_rangeAttackPoint.position, _rangeAttackRadius);
-        //if (targetCollider != null && targetCollider.TryGetComponent(out IDamageble damageble)) 
-        //{
-        //    damageble.TakeDamage(_rangeAttackDamage);
-        //}
+        if (targetCollider != null && targetCollider.TryGetComponent(out IDamageble damageble)) 
+        {
+            damageble.TakeDamage(_rangeAttackDamage);
+        }
     }
     private void OnDestroy()
     {

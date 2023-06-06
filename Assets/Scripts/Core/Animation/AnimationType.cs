@@ -7,6 +7,7 @@ namespace Player
         Jump = 2,
         Attack = 3, 
         Climb = 4,
+        Die = 5,
     }
 
 }
