@@ -58,6 +58,7 @@ namespace Player
             PlayAnimation(AnimationType.Attack, _isAttacking);
             PlayAnimation(AnimationType.Die, _isPlayerDead);
         }
+        public void SetDamage(float damage) { _playerCloseAttackDamage += damage; }
         public void Attack() 
         {
             _isAttacking = true;

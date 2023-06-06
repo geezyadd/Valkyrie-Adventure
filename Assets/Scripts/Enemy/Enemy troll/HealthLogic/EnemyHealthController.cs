@@ -24,6 +24,7 @@ public class EnemyHealthController : MonoBehaviour, IDamageble
     {
         _currentHP -= damage;
     }
+    
 
     private void PulseCheck() { if (_currentHP < 1) { _baseEnemyEntity.Die(); } }
 
