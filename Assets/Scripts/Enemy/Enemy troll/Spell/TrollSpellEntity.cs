@@ -17,7 +17,7 @@ public class TrollSpellEntity : MonoBehaviour
     }
     private void Start()
     {
-        _spellSpawner = new Vector2(_player.transform.position.x, transform.position.y);
+        _spellSpawner = new Vector2(_player.transform.position.x, _player.transform.position.y + 0.9f);
         transform.position = _spellSpawner;
     }
     private void SpellDamager()
