@@ -1,6 +1,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 [Serializable]
@@ -12,4 +13,6 @@ public class EnemyDescriptor
     [field: SerializeField] public float PatrolRange;
     [field: SerializeField] public float RotatePatrolDistance;
     [field: SerializeField] public Animator Animator;
+    [field: SerializeField] public Slider _hpSlider;
+    [field: SerializeField] public float _maxHitPoints;
 }
