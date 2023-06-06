@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
-using static UnityEngine.EventSystems.EventTrigger;
-using static UnityEngine.ParticleSystem;
+
 
 public class BaseEnemyEntity : MonoBehaviour
 {
