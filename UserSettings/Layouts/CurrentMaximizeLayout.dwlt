@@ -23,7 +23,11 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 51987
+=======
+  controlID: 1019
+>>>>>>> AV-9-Level-menu
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +145,11 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 51988
+=======
+  controlID: 1020
+>>>>>>> AV-9-Level-menu
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +174,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 51989
+=======
+  controlID: 1021
+>>>>>>> AV-9-Level-menu
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +204,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 51990
+=======
+  controlID: 1022
+>>>>>>> AV-9-Level-menu
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,9 +267,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: e8b0fcff
       m_LastClickedID: -216856
       m_ExpandedIDs: ecb0fcfff4b0fcfffeb0fcff56b1fcffa4b1fcff34b3fcffe0b8fcffeab8fcff8cb9fcff54dffcff88e4fcff54e5fcff40e6fcff02e7fcff9eeefcff5667fdff2068fdff1addfdff0cdcffff68e6ffffa4f6ffff1cf8ffff2cf8ffff06fbffff30670000e8670000446800005268000060680000c0950100609601007096010090ef0100
+=======
+      m_SelectedIDs: 38e8ffff
+      m_LastClickedID: -6088
+      m_ExpandedIDs: c0e3ffff16e8ffff1ae8ffff2ee8ffff38e8ffff64e9ffff62ecffffc8f0ffffd0f0ffffdaf0ffff3cf1ffff58f7ffff62f7ffff0efbffff
+>>>>>>> AV-9-Level-menu
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Image
@@ -586,9 +608,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 4.844735, y: 3.5199347, z: -0.12027298}
     speed: 2
     m_Value: {x: 4.844735, y: 3.5199347, z: -0.12027298}
+=======
+    m_Target: {x: 1390.2654, y: 677.97235, z: -9.884128}
+    speed: 2
+    m_Value: {x: 1390.2654, y: 677.97235, z: -9.884128}
+>>>>>>> AV-9-Level-menu
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -639,9 +667,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 22.027327
     speed: 2
     m_Value: 22.027327
+=======
+    m_Target: 1092.4469
+    speed: 2
+    m_Value: 1092.4469
+>>>>>>> AV-9-Level-menu
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -877,9 +911,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 559
     width: 1230
     height: 380
+=======
+    y: 536
+    width: 1557
+    height: 400
+>>>>>>> AV-9-Level-menu
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
@@ -930,22 +970,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Resources/Prefab/MenuUI
+=======
+    - Assets/Resources/Prefab/MenuUI/LevelMenu
+>>>>>>> AV-9-Level-menu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Resources/Prefab/MenuUI
+=======
+  - Assets/Resources/Prefab/MenuUI/LevelMenu
+>>>>>>> AV-9-Level-menu
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\pinkl\unityProj\gameDevCourse
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: ec110200
     m_LastClickedID: 135660
     m_ExpandedIDs: 00000000086600000a6600000c6600000e66000010660000206600004896000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 98660000
+    m_LastClickedID: 26264
+    m_ExpandedIDs: 00000000fe650000006600000266000004660000066600009466000000ca9a3bffffff7f
+>>>>>>> AV-9-Level-menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -973,7 +1028,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000086600000a6600000c6600000e6600001066000000ca9a3bffffff7f
+=======
+    m_ExpandedIDs: 00000000fe6500000066000002660000046600000666000000ca9a3bffffff7f
+>>>>>>> AV-9-Level-menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -998,8 +1057,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: e8b0fcff
     m_LastClickedInstanceID: -216856
+=======
+    m_SelectedInstanceIDs: 38e8ffff
+    m_LastClickedInstanceID: -6088
+>>>>>>> AV-9-Level-menu
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000c25e000058640000ac660000906e0000887600008e5d0000be7e000040670000d85e0000647400002e620000225f000022680000066200008e5f0000c6a0000006a400007063000086890000b65f0000a05f0000c46d000042600000d2610000ee61000088630000
     m_RenameOverlay:
@@ -1158,4 +1222,8 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: -170154
+=======
+  m_LastSelectedObjectID: -3878
+>>>>>>> AV-9-Level-menu
