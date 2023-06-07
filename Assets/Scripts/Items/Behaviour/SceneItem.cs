@@ -39,7 +39,7 @@ public class SceneItem : MonoBehaviour
                     break;
                 case (ItemId)4: //coins
                     _coinsCounter.CollectCoin();
-                    _coinsCounterText.text = "Coins Colected: " + _coinsCounter.GetCurrentAmountOfCoins() + "/" + _coinsCounter.GetRequireAmountOfCoins();
+                    _coinsCounterText.text = "Coins Collected: " + _coinsCounter.GetCurrentAmountOfCoins() + "/" + _coinsCounter.GetRequireAmountOfCoins();
                     break;
 
             }

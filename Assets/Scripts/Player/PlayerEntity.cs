@@ -11,32 +11,27 @@ namespace Player
     {
         [SerializeField] private DirectionalMovementData _directionalMovementData;
         [SerializeField] private JumperData _jumperData;
-
         private DirectionMover _directionMover;
         private Jumper _jumper;
-
         [Header("Jump")]
         [SerializeField] private JumpPointController _jumpPointController;
         [SerializeField] private bool _isJumping;
         private Vector2 _wallJumpNormal;
         [SerializeField] private float _wallJumpForce;
         [SerializeField] private bool _wallrun;
-
         [SerializeField] private bool _isAttacking;
-
         private Rigidbody2D _rigidbody;
-
         [SerializeField] private Animator _animator;
         private AnimationType _currentAnimationType;
-
         [SerializeField] private Transform _playerCloseAttackPoint;
         [SerializeField] private float _playerCloseAttackRadius;
         [SerializeField] private float _playerCloseAttackDamage;
         private bool _isPlayerDead = false;
-
-
+        [SerializeField] private float _attackModifier;
+        [SerializeField] private bool _isSecondAttacking;
         private void Start()
         {
+            _attackModifier = UnityEngine.Random.value < 0.5f ? 1 : 2;
             _rigidbody = GetComponent<Rigidbody2D>();
             _directionMover = new DirectionMover(_rigidbody, _directionalMovementData);
             _jumper = new Jumper(_rigidbody, _jumpPointController, _jumperData);
@@ -45,7 +40,6 @@ namespace Player
         {
             GetIsJump();
             UpdateAnimations();
-
         }
         private void GetIsJump() { _isJumping = _jumpPointController.IsJumping(); }
         
@@ -57,16 +51,29 @@ namespace Player
             PlayAnimation(AnimationType.Climb, _wallrun && _isJumping);
             PlayAnimation(AnimationType.Attack, _isAttacking);
             PlayAnimation(AnimationType.Die, _isPlayerDead);
+            PlayAnimation(AnimationType.SecondAttack, _isSecondAttacking);
         }
         public void SetDamage(float damage) { _playerCloseAttackDamage += damage; }
         public void Attack() 
         {
-            _isAttacking = true;
-            Debug.Log("attack");
+            switch (_attackModifier)
+            {
+                case 1:
+                    _isAttacking = true;
+                    break;
+                case 2:
+                    _isSecondAttacking = true;
+                    break;
+            }
+        }
+        private void AttackModifier()
+        {
+            _attackModifier = UnityEngine.Random.value < 0.5f ? 1 : 2;
         }
         private void AttackStop()
         {
             _isAttacking = false;
+            _isSecondAttacking = false;
         }
         public void MoveHorizontally(float direction) => _directionMover.MoveHorizontally(direction);
         public void Jump() => _jumper.Jump();
