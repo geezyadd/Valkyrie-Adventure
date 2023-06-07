@@ -9,7 +9,6 @@ namespace Player
         SecondAttack = 4,
         Climb = 5,
         Die = 6,
-
     }
 
 }
