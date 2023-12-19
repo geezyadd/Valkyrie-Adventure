@@ -155,7 +155,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.pinkl.ValkyrieAdventure
-    Standalone: com.DefaultCompany.2DProject
+    Standalone: com.pinkl.ValkyrieAdventure
   buildNumber:
     Standalone: 0
     VisionOS: 0

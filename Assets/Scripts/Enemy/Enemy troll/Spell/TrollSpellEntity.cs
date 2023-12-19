@@ -32,4 +32,5 @@ public class TrollSpellEntity : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
 }
